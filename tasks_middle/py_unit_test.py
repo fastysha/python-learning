@@ -14,7 +14,7 @@ import unittest
 def div(a, b):
     if (b == 0):
         raise ValueError('Can not divide on zero')
-    return a / b
+    return a / b 
 
 # Cоздаем тестовый класс и наследуемся от соответствующего класса
 class TestDivFunction(unittest.TestCase):
