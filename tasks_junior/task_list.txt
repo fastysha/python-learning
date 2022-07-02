@@ -1,0 +1,13 @@
+Hello, here is your task for next few days. 
+I will grade each task using americ grade system, it means you will get either
+[A, B, C, D, E, F]
+
+Please follow the order, and have fun! 
+
+1) factorial (A)
+2) reverse (C)
+3) polyndrom (B)
+4) dictionary_actor(B+)
+5) guess_the_word (A-)
+6) class_book (B-)
+7) lambda_filter (B+)

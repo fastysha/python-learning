@@ -1,0 +1,27 @@
+parent={
+    "Name":"",
+    "Lastname":"",
+    "Age":"",
+    "Work":"",
+    "Phone_number":""
+}
+student={
+    "Name":"",
+    "Lastname":"",
+    "Birthday":{
+        "year":"",
+        "month":"",
+        "day":""
+    },
+    "Adress":{
+        "street":"",
+        "house":"",
+        "apartament":""
+    },
+    "Class":{
+        "number":"",
+        "letter":""
+    },
+    "Mother":parent,
+    "Father":parent
+}
