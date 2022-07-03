@@ -51,7 +51,5 @@ class TestDivFunction(unittest.TestCase):
         import random
         return random.randint(-100, -1)
 
-
-
 # Запускаем все тесты
 unittest.main()
