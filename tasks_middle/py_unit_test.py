@@ -3,7 +3,6 @@
 # Ознакомиться с Py Unit в Google. 
 # https://pythonworld.ru/moduli/modul-unittest.html
 
-
 ##############################
 # Пример теста от меня:
 
