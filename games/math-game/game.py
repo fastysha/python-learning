@@ -1,6 +1,6 @@
 import random
 
-QUESTIONS_COUNT = 10
+QUESTIONS_COUNT = 20
 MIN_N = 1
 MAX_N = 10
 
@@ -12,6 +12,15 @@ sign_dict = {
     "-": lambda a, b: a-b,
     "+": lambda a, b: a+b,
     "*": lambda a, b: a*b
+}
+
+grade_dict={
+    range(90,101):"A",
+    range(80,90):"B",
+    range(75,80):"C",
+    range(65,75):"D",
+    range(60,65):"E",
+    range(0,60):"F"
 }
 
 while question_number <= QUESTIONS_COUNT:
@@ -27,4 +36,12 @@ while question_number <= QUESTIONS_COUNT:
     
     question_number += 1
 
-print(correct_answers_counter, "correct out of", QUESTIONS_COUNT)
+percent_num=(correct_answers_counter*100)/QUESTIONS_COUNT
+
+grade = ''
+for range_key in grade_dict.keys():
+    if percent_num in range_key:
+        grade = grade_dict[range_key]
+        break
+
+print(correct_answers_counter, "correct out of", QUESTIONS_COUNT, ". Grade:", grade)
