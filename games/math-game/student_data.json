@@ -1,0 +1,19 @@
+[{
+        "name": "Rodyslav",
+        "surname": "Sinitsyn",
+        "class_number": "10A",
+        "grade": "A",
+        "time": 39,
+        "correct_answers": 18,
+        "questions_count": 20
+    },
+    {
+        "name": "Nastya",
+        "surname": "Skutelnikova",
+        "class_number": "11B",
+        "grade": "A",
+        "time": 51,
+        "correct_answers": 19,
+        "questions_count": 20
+    }
+]
