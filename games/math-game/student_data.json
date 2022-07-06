@@ -15,5 +15,14 @@
         "time": 51,
         "correct_answers": 19,
         "questions_count": 20
+    },
+    {
+        "name": "Andrew",
+        "surname": "Key",
+        "class_number": "10A",
+        "grade": "C",
+        "time": 25,
+        "correct_answers": 15,
+        "questions_count": 20
     }
 ]
