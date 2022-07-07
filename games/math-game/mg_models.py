@@ -9,3 +9,6 @@ class Student:
         self.time = time
         self.correct_answers = correct_answers
         self.questions_count = questions_count
+
+    def __repr__(self):
+        return str(self.__dict__)
