@@ -1,6 +1,8 @@
 # Написать функцию которая возвращает лист с приобразованными значениями
-def map(list, converter) -> list:
-    return [converter(el) for el in list]
+import unittest
+class TestStringMethods(unittest.TestCase):
+    def map(list, converter) -> list:
+        return [converter(el) for el in list]
 
 ################################################### 
 # Это трогать не нужно! Пишем только в теле функции

@@ -3,11 +3,11 @@
 # Ознакомиться с Py Unit в Google. 
 # https://pythonworld.ru/moduli/modul-unittest.html
 
-
 ##############################
 # Пример теста от меня:
 
 # Импортируем тестовый модуль
+from email import message
 import unittest
 
 # Будем тестировать эту функцию
@@ -44,7 +44,10 @@ class TestDivFunction(unittest.TestCase):
         # то мы всегда получим результат меньше нуля
         negative_number = self.get_random_negative_number()
         # Добавь сама этот тест используя assertLess
-        raise NotImplementedError('Test not completed')
+        actual_result=div(8,negative_number)
+      
+        self.assertLess(actual_result, 0)
+    
 
     # эта функция ничего не тестирует, а просто служит как вспомогательная
     def get_random_negative_number(self):
