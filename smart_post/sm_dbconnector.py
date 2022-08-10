@@ -1,4 +1,5 @@
-from sm_data_models import ParcelStatus
+from sm_data_models import ParcelStatus, User
+from sm_models_mapper import map_to_user
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -13,19 +14,17 @@ db = mysql.connector.connect(
 # ##########################################
 
 
-def find_user_by_phone_number(phone_number):
+def find_user_by_phone_number(phone_number) -> User:
     cursor = db.cursor(dictionary=True)
     cursor.execute(
         "SELECT * FROM Users WHERE UserPhoneNumber = %s", (phone_number,))
     user = cursor.fetchone()
-    # print(f'Finded user by phone {phone_number} is: {user}')
-    return user
+    return map_to_user(user)
 
-
-def create_user(user):
+def create_user(user: User):
     cursor = db.cursor()
     sql = "INSERT INTO Users (UserName, UserSurname,UserPhoneNumber,Country) VALUES (%s,%s,%s,%s)"
-    args = (user["name"], user["surname"], user["phone_num"], user["country"])
+    args = (user.name, user.surname, user.phone_number, user.country)
     cursor.execute(sql, args)
     db.commit()
     print(cursor.rowcount, "record inserted.")
